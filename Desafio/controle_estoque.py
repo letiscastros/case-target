@@ -63,7 +63,7 @@ class GestorEstoque:
         return registro
 
     def exibir_estoque_atual(self):
-        print("\n--- ESTOQUE ATUAL ---")
+        print("\nESTOQUE ATUAL")
         for p in self.dados['estoque']:
             print(f"[{p['codigoProduto']}] {p['descricaoProduto']}: {p['estoque']} un.")
 
@@ -74,7 +74,7 @@ gestor = GestorEstoque(estoque_json)
 print("Situação Inicial:")
 gestor.exibir_estoque_atual()
 
-print("\n--- Realizando Movimentações ---")
+print("\nRealizando Movimentações")
 
 
 resultado1 = gestor.lancar_movimentacao(101, "entrada", 50, "Reposição de fornecedor")
